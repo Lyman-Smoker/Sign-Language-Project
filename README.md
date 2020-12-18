@@ -83,7 +83,7 @@ SLD使用的数据来自Public DGS Corpus提供的OpenPose数据集，数据文�
 不难发现，每个json文件包含了最多三个``camera``获取的数据，三个摄像头分别命名名为``a``,``b``和``c``，在这里我们只需要获取``a``和``b``摄像头拍摄的数据。
 每个摄像头中的数据分别存在对应的```frames```字典下，字典中的``"0"``,``"1"``...表示帧号，而人的肢体数据保存在其中的``people``列表中。
 ### 如何获取
-你可以在DGS-Corpus官网上获取相关的经过预处理的OpenPose数据集，获取到的json文件命名格式为 “ 编号 + openpose.json ” ，如：```1413446_openpose.json``。
+你可以在[DGS-Corpus](https://www.sign-lang.uni-hamburg.de/meinedgs/ling/start-name_en.html)官网上获取相关的经过预处理的OpenPose数据集，获取到的json文件命名格式为 “ 编号 + openpose.json ” ，如：```1413446_openpose.json``。
 ## 解析json文件
 我这里提供了两个操作json文件的实例，分别为 ``data_proccessing.py`` 和 ``test.ipynb``，可以参考其中的解析方法来对获取的json文件进行解析。
 Tips：这两个操作实例对应的json文件是数据集网站中编号为1413446的文件。
