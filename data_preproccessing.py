@@ -12,6 +12,8 @@ frames=frames[0]
 train_data=np.array([])
 train_confidence=np.array([])
 train_is_signing=np.zeros(len(frames),dtype=int)
+#如果该摄像头拍摄的人在第4帧到第6帧在做手语，则将其标记为1
+train_is_signing[4:7]=1
 #对每一帧进行处理
 for i in range(len(frames)):
   frame=frames[str(i)]
